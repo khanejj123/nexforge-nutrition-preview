@@ -1,0 +1,119 @@
+/* NEXFORGE motion: progressive enhancement, local controls, no dependencies. */
+:root{--motion-ease:cubic-bezier(.22,.8,.24,1)}
+.motion-toggle{color:#afb2bb;border:1px solid transparent;flex-shrink:0}
+.motion-toggle:hover{color:var(--red);border-color:#422127}
+.motion-toggle .motion-play-icon{display:none}
+.motion-toggle[aria-pressed="true"] .motion-pause-icon{display:none}
+.motion-toggle[aria-pressed="true"] .motion-play-icon{display:block}
+.motion-toggle:disabled{cursor:default;opacity:.4}
+.scroll-progress{position:absolute;bottom:-1px;left:0;right:0;height:2px;pointer-events:none;overflow:hidden}
+.scroll-progress>span{display:block;height:100%;background:var(--red);transform:scaleX(0);transform-origin:left}
+.site-header{transition:background .25s,border-color .25s,box-shadow .25s}
+.site-header.is-scrolled{background:rgba(9,10,11,.98);border-color:#3b262a;box-shadow:0 7px 30px #0003}
+.reveal-item{transition:opacity .7s var(--motion-ease),transform .7s var(--motion-ease);transition-delay:var(--reveal-delay,0s)}
+html[data-motion="on"].reveal-ready .reveal-item:not(.is-revealed):not(:focus-within){opacity:0;transform:translate3d(0,25px,0)}
+.reveal-item.is-revealed{opacity:1;transform:none}
+.reveal-item:focus-within{opacity:1!important;transform:none!important;transition:none!important}
+.hero-energy{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.energy-glow{position:absolute;right:-12%;top:4%;width:70%;height:90%;background:radial-gradient(ellipse,#f12d351c,transparent 65%);opacity:.6}
+.energy-streak{position:absolute;left:-85%;top:65%;width:75%;height:1px;background:linear-gradient(90deg,transparent,#f12d3566,transparent);transform:rotate(-24deg);opacity:0}
+.energy-streak:nth-child(3){top:24%;width:48%}
+.energy-streak:nth-child(4){top:88%;width:64%}
+.hero-media{transition:transform .7s var(--motion-ease)}
+html[data-motion="on"] .hero-media{transform:translate3d(var(--hero-x,0px),var(--hero-y,0px),0)}
+.hero-poster{transform-origin:62% 60%}
+.hero-copy>h1{position:relative}
+.hero-copy h1 em{display:inline-block}
+.energy-banner{overflow:hidden;padding:27px 0;border-bottom:1px solid #2d2023;background:#110e10;pointer-events:none}
+.energy-track{display:flex;width:max-content;transform:translateX(0)}
+.energy-sequence{display:flex;align-items:center;gap:42px;padding-right:42px;flex-shrink:0;font-family:var(--display);font-size:44px;line-height:1;color:#666169;letter-spacing:.5px}
+.energy-divider{color:var(--red);font-size:30px}
+.animated-emblem{display:block;width:245px;max-width:100%;height:auto;stroke:none;overflow:visible;opacity:.9}
+.brand-page-art .animated-emblem{width:350px}
+.forge-icon{transform-origin:center;transform-box:fill-box}
+.forge-piece,.forge-red{transform-box:fill-box;transform-origin:center}
+.product-image{transition:transform .35s var(--motion-ease),border-color .3s,box-shadow .3s;isolation:isolate}
+.product-image:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,50%),#ffffff17,transparent 57%);opacity:0;transition:opacity .35s;z-index:1}
+.product-badges,.product-view{z-index:2}
+.button{position:relative;isolation:isolate;overflow:hidden}
+.button:before{content:"";position:absolute;inset:-50% auto -50% -80%;width:40%;background:linear-gradient(90deg,transparent,#ffffff24,transparent);transform:skewX(-22deg);pointer-events:none;z-index:-1}
+.underlined-link span,.button>span{transition:transform .3s var(--motion-ease)}
+html[data-motion="on"] .button:hover>span,html[data-motion="on"] .underlined-link:hover>span{transform:translate(3px,-3px)}
+html[data-motion="on"] .button:hover:before{animation:button-sheen .65s ease-out both}
+html[data-motion="on"] .add-button{transition:transform .2s,background .2s,border-color .2s}
+html[data-motion="on"] .add-button:hover{transform:translateY(-2px)}
+html[data-motion="on"] .add-button:active{transform:scale(.94)}
+html[data-motion="on"] .mobile-nav:not([hidden]){animation:menu-open .26s var(--motion-ease) both}
+html[data-motion="on"] .mobile-nav:not([hidden]) a{animation:enter-up .35s var(--motion-ease) both}
+html[data-motion="on"] .mobile-nav a:nth-child(2){animation-delay:.05s}
+html[data-motion="on"] .mobile-nav a:nth-child(3){animation-delay:.1s}
+html[data-motion="on"] .flash{animation:enter-up .4s var(--motion-ease) both}
+html[data-motion="on"] .cookie-banner:not([hidden]),html[data-motion="on"] .cookie-dialog[open]{animation:enter-up .3s var(--motion-ease) both}
+html[data-motion="on"] .confirmation-mark{animation:confirmation-enter .65s var(--motion-ease) both}
+html[data-motion="on"] .hero-copy>h1{animation:enter-up .8s var(--motion-ease) .06s both}
+html[data-motion="on"] .hero-copy>.eyebrow{animation:enter-up .65s var(--motion-ease) both}
+html[data-motion="on"] .hero-copy>p{animation:enter-up .7s var(--motion-ease) .18s both}
+html[data-motion="on"] .hero-cta{animation:enter-up .7s var(--motion-ease) .3s both}
+html[data-motion="on"] .hero-caption{animation:enter-up .7s var(--motion-ease) .38s both}
+html[data-motion="on"] .hero-poster{animation:hero-breathe 12s ease-in-out infinite alternate;animation-play-state:paused}
+html[data-motion="on"] .energy-glow{animation:energy-glow 9s ease-in-out infinite alternate;animation-play-state:paused}
+html[data-motion="on"] .energy-streak{animation:energy-pass 8s ease-in-out infinite;animation-play-state:paused}
+html[data-motion="on"] .energy-streak:nth-child(3){animation-delay:2.5s;animation-duration:10s}
+html[data-motion="on"] .energy-streak:nth-child(4){animation-delay:5s;animation-duration:9s}
+html[data-motion="on"] .scroll-hint>span{animation:scroll-cue 2s ease-in-out infinite;animation-play-state:paused}
+html[data-motion="on"] .forge-icon{animation:forge-float 6s ease-in-out infinite;animation-play-state:paused}
+html[data-motion="on"] .forge-red{animation:forge-energy 4s ease-in-out infinite;animation-play-state:paused}
+html[data-motion="on"] .energy-track{animation:energy-marquee 32s linear infinite;animation-play-state:paused}
+html[data-motion="on"][data-page-active="true"] .hero.motion-in-view .hero-poster,
+html[data-motion="on"][data-page-active="true"] .hero.motion-in-view .energy-glow,
+html[data-motion="on"][data-page-active="true"] .hero.motion-in-view .energy-streak,
+html[data-motion="on"][data-page-active="true"] .hero.motion-in-view .scroll-hint>span,
+html[data-motion="on"][data-page-active="true"] .motion-in-view .forge-icon,
+html[data-motion="on"][data-page-active="true"] .motion-in-view .forge-red,
+html[data-motion="on"][data-page-active="true"] .energy-banner.motion-in-view .energy-track{animation-play-state:running}
+html[data-motion="off"]{scroll-behavior:auto}
+html[data-motion="off"] *,html[data-motion="off"] *:before,html[data-motion="off"] *:after{animation:none!important;transition:none!important}
+html[data-motion="off"] .hero-media,html[data-motion="off"] .product-image,html[data-motion="off"] .button{transform:none!important}
+@keyframes enter-up{from{opacity:0;transform:translate3d(0,18px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes hero-breathe{from{transform:scale(1.015)}to{transform:scale(1.065)}}
+@keyframes energy-glow{from{transform:translate3d(3%,2%,0);opacity:.35}to{transform:translate3d(-6%,-4%,0);opacity:.8}}
+@keyframes energy-pass{0%,15%{opacity:0;transform:translate3d(0,0,0) rotate(-24deg)}35%{opacity:.8}70%,100%{opacity:0;transform:translate3d(280%,0,0) rotate(-24deg)}}
+@keyframes forge-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes forge-energy{0%,100%{transform:translateX(0);opacity:1}50%{transform:translateX(9px);opacity:.72}}
+@keyframes energy-marquee{to{transform:translateX(-50%)}}
+@keyframes scroll-cue{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+@keyframes button-sheen{to{left:150%}}
+@keyframes menu-open{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes confirmation-enter{from{opacity:0;transform:scale(.8) rotate(-8deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+@keyframes page-out{to{opacity:0}}
+@keyframes page-in{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(hover:hover) and (pointer:fine){
+  html[data-motion="on"] .product-image.has-pointer{transform:perspective(1000px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));border-color:#703139;box-shadow:0 16px 35px #0005}
+  html[data-motion="on"] .product-image.has-pointer:after{opacity:1}
+  html[data-motion="on"] .button[data-magnetic]{transform:translate3d(var(--magnetic-x,0px),var(--magnetic-y,0px),0)}
+  html[data-motion="on"] .button[data-magnetic]:hover{transform:translate3d(var(--magnetic-x,0px),calc(var(--magnetic-y,0px) - 2px),0)}
+}
+@media(max-width:600px){
+  .motion-toggle{width:27px;height:32px;padding:5px}
+  .motion-toggle svg{width:18px;height:18px}
+  .header-actions{gap:6px}
+  .energy-sequence{font-size:31px;gap:24px;padding-right:24px}
+  .energy-divider{font-size:23px}
+  .energy-banner{padding-block:23px}
+  .hero-energy{top:310px}
+  .energy-glow{width:110%;right:-20%}
+  .energy-streak{top:75%;height:1px}
+  .brand-page-art .animated-emblem{width:260px}
+  .reveal-item{transition-duration:.55s}
+}
+@media(prefers-reduced-motion:no-preference){
+  @view-transition{navigation:auto}
+  ::view-transition-old(root){animation:page-out .13s ease-out both}
+  ::view-transition-new(root){animation:page-in .25s var(--motion-ease) both}
+}
+@media(prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+  .hero-media,.hero-poster,.product-image,.animated-emblem *{transform:none!important}
+  .energy-streak{display:none}
+  .reveal-item{opacity:1!important;transform:none!important}
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1262" height="156" viewBox="34 42 1262 156" role="img" aria-labelledby="title desc">
+<title id="title">Logo NEXFORGE NUTRITION</title>
+<desc id="desc">Identité originale NEXFORGE NUTRITION. Monogramme NF géométrique et lettres dessinées en tracés vectoriels. Noir, blanc et rouge électrique.</desc>
+
+<g transform="translate(34 42) scale(0.4)">
+<path fill="#FFFFFF" d="M0 0H104L258 134V249L0 32Z"/>
+<path fill="#FFFFFF" d="M0 73L96 151V393L0 315Z"/>
+<path fill="#FFFFFF" d="M124 174L284 307V119H546L473 190H343L378 221V386H258L124 274Z"/>
+<path fill="#F12D35" d="M350 16H620L545 87H268Z"/>
+</g>
+<g transform="translate(329 49) scale(0.94)" fill="#FFFFFF" fill-rule="evenodd">
+<path aria-label="N" transform="translate(0 0)" d="M0 100V0H28L90 58V0H118V100H90L28 42V100Z"/>
+<path aria-label="E" transform="translate(136 0)" d="M0 0H100V17L92 25H28V38H94L80 62H28V75H100V100H0Z"/>
+<path aria-label="X" transform="translate(254 0)" d="M0 0H36L67 29L97 0H134L86 48L134 100H96L67 71L36 100H0L47 49Z"/>
+<path aria-label="F" transform="translate(406 0)" d="M0 0H100V17L92 25H28V38H88V63H28V100H0Z"/>
+<path aria-label="O" transform="translate(524 0)" d="M25 0H87Q112 0 112 25V75Q112 100 87 100H25Q0 100 0 75V25Q0 0 25 0Z M33 25Q28 25 28 30V70Q28 75 33 75H79Q84 75 84 70V30Q84 25 79 25Z"/>
+<path aria-label="R" transform="translate(654 0)" d="M0 100V0H87Q113 0 113 26V45Q113 65 90 68L120 100H82L55 70H28V100Z M28 25V46H79Q85 46 85 40V31Q85 25 79 25Z"/>
+<path aria-label="G" transform="translate(792 0)" d="M25 0H118V25H34Q28 25 28 31V69Q28 75 34 75H90V64H57V39H118V75Q118 100 93 100H25Q0 100 0 75V25Q0 0 25 0Z"/>
+<path aria-label="E" transform="translate(928 0)" d="M0 0H100V17L92 25H28V38H94L80 62H28V75H100V100H0Z"/>
+</g>
+<g transform="translate(329 168) scale(0.94)" fill="#FFFFFF" fill-rule="evenodd">
+<path aria-label="N" transform="translate(0 0)" d="M0 26V0H5L23 18V0H28V26H23L5 8V26Z"/>
+<path aria-label="U" transform="translate(56 0)" d="M0 0H5V19Q5 22 8 22H20Q23 22 23 19V0H28V20Q28 26 21 26H7Q0 26 0 20Z"/>
+<path aria-label="T" transform="translate(112 0)" d="M0 0H28V5H16.5V26H11.5V5H0Z"/>
+<path aria-label="R" transform="translate(168 0)" d="M0 26V0H20Q28 0 28 8V11Q28 18 20 18L28 26H21L13 18H5V26Z M5 5H20Q23 5 23 8V10Q23 13 20 13H5Z"/>
+<path aria-label="I" transform="translate(224 0)" d="M0 0H5V26H0Z"/>
+<path aria-label="T" transform="translate(257 0)" d="M0 0H28V5H16.5V26H11.5V5H0Z"/>
+<path aria-label="I" transform="translate(313 0)" d="M0 0H5V26H0Z"/>
+<path aria-label="O" transform="translate(346 0)" d="M6 0H22Q28 0 28 6V20Q28 26 22 26H6Q0 26 0 20V6Q0 0 6 0Z M7 5Q5 5 5 7V19Q5 21 7 21H21Q23 21 23 19V7Q23 5 21 5Z"/>
+<path aria-label="N" transform="translate(402 0)" d="M0 26V0H5L23 18V0H28V26H23L5 8V26Z"/>
+</g>
+</svg>
